@@ -9,6 +9,8 @@ import javax.validation.constraints.NotBlank;
 @Getter
 @Setter
 public class UserForm {
+    private Long id;
+
     @NotBlank(message = "이름은 필수입력 항목입니다!")
     private String name;
 
