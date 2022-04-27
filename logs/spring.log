@@ -615,3 +615,110 @@ java.sql.SQLException: Duplicate entry 'aa@gmail.com' for key 'UK_ob8kqyqqgmefl0
 2022-04-27 16:40:11.944 DEBUG 10448 --- [http-nio-8080-exec-1] c.b.m.controller.UserController          : User => User(id=1, name=test22, email=aa@gmail)
 2022-04-27 16:40:11.944  WARN 10448 --- [http-nio-8080-exec-1] c.b.m.controller.UserController          : UserForm => UserForm(id=1, name=test22, email=aa@gmail)
 2022-04-27 16:40:24.369 DEBUG 10448 --- [http-nio-8080-exec-2] c.b.m.controller.UserController          : UserForm => UserForm(id=1, name=test, email=aa@gmail.com)
+2022-04-27 16:48:48.710  INFO 10448 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:48:48.713  INFO 10448 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-04-27 16:48:48.719  INFO 10448 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-04-27 16:48:49.060  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Starting MyspringbootAppApplication using Java 1.8.0_322 on LAPTOP-242K23FP with PID 10448 (C:\jdk8_spring\workspace\myspringboot-app\target\classes started by vega2 in C:\jdk8_spring\workspace\myspringboot-app)
+2022-04-27 16:48:49.060 DEBUG 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Running with Spring Boot v2.5.12, Spring v5.3.18
+2022-04-27 16:48:49.060  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : The following 1 profile is active: "test"
+2022-04-27 16:48:49.417  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 16:48:49.443  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2022-04-27 16:48:49.645  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 16:48:49.646  INFO 10448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 16:48:49.646  INFO 10448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-27 16:48:49.677  INFO 10448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 16:48:49.677  INFO 10448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 614 ms
+2022-04-27 16:48:49.695  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-04-27 16:48:49.699  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-04-27 16:48:49.699  INFO 10448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2022-04-27 16:48:49.733  INFO 10448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 16:48:49.738  INFO 10448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-04-27 16:48:49.828  INFO 10448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 16:48:49.828  INFO 10448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:48:49.990  WARN 10448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 16:48:50.059  INFO 10448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-27 16:48:50.170  INFO 10448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 16:48:50.193  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 16:48:50.202  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Started MyspringbootAppApplication in 1.193 seconds (JVM running for 867.745)
+2022-04-27 16:48:50.205  INFO 10448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 16:48:53.288  INFO 10448 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:48:53.290  INFO 10448 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-04-27 16:48:53.296  INFO 10448 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-04-27 16:48:53.562  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Starting MyspringbootAppApplication using Java 1.8.0_322 on LAPTOP-242K23FP with PID 10448 (C:\jdk8_spring\workspace\myspringboot-app\target\classes started by vega2 in C:\jdk8_spring\workspace\myspringboot-app)
+2022-04-27 16:48:53.562 DEBUG 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Running with Spring Boot v2.5.12, Spring v5.3.18
+2022-04-27 16:48:53.563  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : The following 1 profile is active: "test"
+2022-04-27 16:48:53.894  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 16:48:53.923  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2022-04-27 16:48:54.097  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 16:48:54.098  INFO 10448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 16:48:54.099  INFO 10448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-27 16:48:54.134  INFO 10448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 16:48:54.135  INFO 10448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 569 ms
+2022-04-27 16:48:54.158  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-04-27 16:48:54.165  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-04-27 16:48:54.165  INFO 10448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2022-04-27 16:48:54.210  INFO 10448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 16:48:54.219  INFO 10448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-04-27 16:48:54.318  INFO 10448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 16:48:54.319  INFO 10448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:48:54.505  WARN 10448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 16:48:54.602  INFO 10448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-27 16:48:54.754  INFO 10448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 16:48:54.783  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 16:48:54.795  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Started MyspringbootAppApplication in 1.288 seconds (JVM running for 872.338)
+2022-04-27 16:48:54.802  INFO 10448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 16:49:03.028  INFO 10448 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:49:03.030  INFO 10448 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-04-27 16:49:03.036  INFO 10448 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-04-27 16:49:03.252  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Starting MyspringbootAppApplication using Java 1.8.0_322 on LAPTOP-242K23FP with PID 10448 (C:\jdk8_spring\workspace\myspringboot-app\target\classes started by vega2 in C:\jdk8_spring\workspace\myspringboot-app)
+2022-04-27 16:49:03.252 DEBUG 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Running with Spring Boot v2.5.12, Spring v5.3.18
+2022-04-27 16:49:03.252  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : The following 1 profile is active: "test"
+2022-04-27 16:49:03.733  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 16:49:03.759  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2022-04-27 16:49:03.870  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 16:49:03.872  INFO 10448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 16:49:03.873  INFO 10448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-27 16:49:03.904  INFO 10448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 16:49:03.904  INFO 10448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 642 ms
+2022-04-27 16:49:03.924  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-04-27 16:49:03.928  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-04-27 16:49:03.928  INFO 10448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2022-04-27 16:49:03.961  INFO 10448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 16:49:03.969  INFO 10448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-04-27 16:49:04.064  INFO 10448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 16:49:04.065  INFO 10448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:49:04.207  WARN 10448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 16:49:04.259  INFO 10448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-27 16:49:04.353  INFO 10448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 16:49:04.375  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 16:49:04.383  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Started MyspringbootAppApplication in 1.18 seconds (JVM running for 881.927)
+2022-04-27 16:49:04.386  INFO 10448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 16:50:28.765  INFO 10448 --- [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:50:28.766  INFO 10448 --- [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-04-27 16:50:28.770  INFO 10448 --- [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-04-27 16:50:29.008  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Starting MyspringbootAppApplication using Java 1.8.0_322 on LAPTOP-242K23FP with PID 10448 (C:\jdk8_spring\workspace\myspringboot-app\target\classes started by vega2 in C:\jdk8_spring\workspace\myspringboot-app)
+2022-04-27 16:50:29.008 DEBUG 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Running with Spring Boot v2.5.12, Spring v5.3.18
+2022-04-27 16:50:29.008  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : The following 1 profile is active: "test"
+2022-04-27 16:50:29.223  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 16:50:29.238  INFO 10448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2022-04-27 16:50:29.356  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 16:50:29.356  INFO 10448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 16:50:29.357  INFO 10448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-27 16:50:29.382  INFO 10448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 16:50:29.382  INFO 10448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2022-04-27 16:50:29.398  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-04-27 16:50:29.403  INFO 10448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-04-27 16:50:29.404  INFO 10448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2022-04-27 16:50:29.428  INFO 10448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 16:50:29.432  INFO 10448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-04-27 16:50:29.494  INFO 10448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 16:50:29.495  INFO 10448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 16:50:29.591  WARN 10448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 16:50:29.639  INFO 10448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-04-27 16:50:29.703  INFO 10448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 16:50:29.715  INFO 10448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 16:50:29.719  INFO 10448 --- [restartedMain] c.b.m.MyspringbootAppApplication         : Started MyspringbootAppApplication in 0.745 seconds (JVM running for 967.263)
+2022-04-27 16:50:29.721  INFO 10448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 16:50:58.502  INFO 10448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 16:50:58.503  INFO 10448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 16:50:58.504  INFO 10448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

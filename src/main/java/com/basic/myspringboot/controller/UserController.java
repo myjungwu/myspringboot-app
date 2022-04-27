@@ -84,4 +84,12 @@ public class UserController {
         model.addAttribute("users", userService.selectAllUser());
         return "index";
     }
+    @GetMapping("/delete/{id}")
+    public String deleteUser(@PathVariable("id") long id, Model model) {
+        User user = userService.selectUser(id);
+        userService.deleteUser(user.getId());
+        model.addAttribute("users", userService.selectAllUser());
+        return "index";
+    }
+
 }
