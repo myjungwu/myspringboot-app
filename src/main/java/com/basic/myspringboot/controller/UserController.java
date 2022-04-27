@@ -26,4 +26,9 @@ public class UserController {
         model.addAttribute("users",userList);
         return "index";
     }
+
+    @GetMapping("/signup")
+    public String showSignUpForm(User myUser) {
+        return "add-user";
+    }
 }
