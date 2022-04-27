@@ -1,12 +1,17 @@
 package com.basic.myspringboot.controller;
 
+import com.basic.myspringboot.controller.form.UserForm;
 import com.basic.myspringboot.entity.User;
 import com.basic.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -28,7 +33,25 @@ public class UserController {
     }
 
     @GetMapping("/signup")
-    public String showSignUpForm(User myUser) {
+    public String showSignUpForm(UserForm myUser) {
         return "add-user";
+    }
+
+    @PostMapping("/adduser")
+    public String addUser(@Valid UserForm userForm, BindingResult result, Model model) {
+        //검증오류가 있다면?
+        if (result.hasErrors()) {
+            //입력Form 화면에 머물러 있게 함
+            return "add-user";
+        }
+
+        User user = new User();
+        //UserForm 객체의 Property를 User 객체의 Property로 값을 복사해줌
+        BeanUtils.copyProperties(userForm, user);
+        //DB에 등록요청
+        userService.insertUser(user);
+
+        model.addAttribute("users", userService.selectAllUser());
+        return "index";
     }
 }
