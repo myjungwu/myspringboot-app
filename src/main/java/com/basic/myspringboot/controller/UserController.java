@@ -68,4 +68,20 @@ public class UserController {
         model.addAttribute("userForm", userForm);
         return "update-user";
     }
+
+    @PostMapping("/update/{id}")
+    public String updateUser(@PathVariable("id") long id, @Valid UserForm userForm, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            userForm.setId(id);
+            return "update-user";
+        }
+
+        log.debug("UserForm => {}", userForm);
+        User user = new User();
+        BeanUtils.copyProperties(userForm, user);
+        userService.insertUser(user);
+
+        model.addAttribute("users", userService.selectAllUser());
+        return "index";
+    }
 }
