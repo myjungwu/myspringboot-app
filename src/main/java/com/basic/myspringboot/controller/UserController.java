@@ -22,25 +22,30 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
+    @GetMapping("/mypage")
+    public String mypage() {
+        return "mypage";
+    }
+
     @GetMapping("/thymeleaf")
     public String leaf(Model model) {
         model.addAttribute("name","스프링부트");
         return "leaf";
     }
 
-    @GetMapping("/index")
+    @GetMapping("/user/index")
     public String userList(Model model) {
         List<User> userList = userService.selectAllUser();
         model.addAttribute("users",userList);
         return "index";
     }
 
-    @GetMapping("/signup")
+    @GetMapping("/user/signup")
     public String showSignUpForm(UserForm myUser) {
         return "add-user";
     }
 
-    @PostMapping("/adduser")
+    @PostMapping("/user/adduser")
     public String addUser(@Valid UserForm userForm, BindingResult result, Model model) {
         //검증오류가 있다면?
         if (result.hasErrors()) {
@@ -58,7 +63,7 @@ public class UserController {
         return "index";
     }
 
-    @GetMapping("/edit/{id}")
+    @GetMapping("/user/edit/{id}")
     public String showUpdateForm(@PathVariable("id") long id, Model model) {
         User user = userService.selectUser(id);
         log.debug("User => {}", user);
@@ -69,7 +74,7 @@ public class UserController {
         return "update-user";
     }
 
-    @PostMapping("/update/{id}")
+    @PostMapping("/user/update/{id}")
     public String updateUser(@PathVariable("id") long id, @Valid UserForm userForm, BindingResult result, Model model) {
         if (result.hasErrors()) {
             userForm.setId(id);
@@ -84,7 +89,7 @@ public class UserController {
         model.addAttribute("users", userService.selectAllUser());
         return "index";
     }
-    @GetMapping("/delete/{id}")
+    @GetMapping("/user/delete/{id}")
     public String deleteUser(@PathVariable("id") long id, Model model) {
         User user = userService.selectUser(id);
         userService.deleteUser(user.getId());
