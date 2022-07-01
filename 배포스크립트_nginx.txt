@@ -96,4 +96,5 @@ docker run --name mywas -d -p 8080:8080 --net msanet --net-alias=mywas vega2k/sp
 
 docker run --name myweb -d -p 80:80 -v /work/test3/nginx/conf:/etc/nginx/ -v /work/test3/nginx/log:/var/log/nginx --net msanet nginx
 
-#docker run --name myweb -d -p 80:80 --net msanet vega2k/springbootreactjs:react
+docker run --name myweb -d -p 80:80 --net msanet vega2k/springbootreactjs:react
+
